@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>農村觀光發展引導小助手</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scanline"></div>
+  <header class="hero">
+    <nav>
+      <div class="brand"><span>RURAL QUEST</span><small>Guide Console</small></div>
+      <a href="#query">快速查詢</a>
+    </nav>
+    <section class="hero-grid">
+      <div>
+        <p class="eyebrow">國小五六年級閱讀探究工具</p>
+        <h1>農村觀光發展<br>引導小助手</h1>
+        <p class="lead">用電競官網感的互動介面，幫教師快速產生「不直接給答案」的追問句，帶學生回到網頁找證據、看見盲點、升級點子。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#query">啟動查詢</a>
+          <a class="button ghost" href="#workflow">查看流程</a>
+        </div>
+      </div>
+      <div class="emblem" aria-label="動態識別圖">
+        <div class="ring"></div>
+        <div class="core">AI<br>COACH</div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="workflow" class="band">
+      <h2>三階段任務流程</h2>
+      <div class="cards">
+        <article><b>01 觀察與發現</b><p>先請學生說出網頁中最有趣的地方，讓想法從他們自己的觀察開始。</p></article>
+        <article><b>02 追問與找線索</b><p>要求學生回到網頁找句子，說明自己的看法不是憑空猜測。</p></article>
+        <article><b>03 點子再升級</b><p>加入居民、環境、交通、天氣等限制，讓方案更完整。</p></article>
+      </div>
+    </section>
+
+    <section id="query" class="console">
+      <div class="panel">
+        <h2>快速查詢介面</h2>
+        <p>輸入你想幫學生優化的問題，例如「學生只想到遊客很多很好玩」或「學生提案遇到下雨天怎麼辦」。系統會產生教師可用的引導回應。</p>
+        <textarea id="teacherQuestion" placeholder="請輸入學生目前卡住的地方，或你想優化的面向"></textarea>
+        <div class="tool-row">
+          <select id="focus">
+            <option value="evidence">文本證據</option>
+            <option value="literacy">資料放大鏡</option>
+            <option value="iteration">點子大進化</option>
+            <option value="opening">開場引導</option>
+          </select>
+          <button id="generate">AI 協助建議</button>
+          <button id="copy">複製回應</button>
+        </div>
+      </div>
+      <div class="panel output">
+        <div class="output-head"><span>回應草稿</span><span id="status">READY</span></div>
+        <div id="answer">先輸入問題，再按下「AI 協助建議」。</div>
+      </div>
+    </section>
+
+    <section class="quick">
+      <h2>一鍵查詢</h2>
+      <div class="chips">
+        <button data-prompt="學生說農村觀光一定能賺錢，但沒有說理由。">學生只說會賺錢</button>
+        <button data-prompt="學生想到採果體驗，但沒有考慮下雨天和人太多。">活動遇到突發狀況</button>
+        <button data-prompt="學生相信網頁所有說法，沒有思考缺點。">缺少資料放大鏡</button>
+        <button data-prompt="學生找不到網頁中的支持句子。">找不到文本證據</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>Rural Quest Guide Console · 教師引導用</footer>
+  <script src="script.js"></script>
+</body>
+</html>

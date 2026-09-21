@@ -1,0 +1,9 @@
+{
+  "name": "rural-tourism-guide-console",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for a rural tourism inquiry guide console.",
+  "scripts": {
+    "start": "python3 -m http.server 8765"
+  }
+}
